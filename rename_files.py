@@ -11,17 +11,18 @@ import os
 # import os imports the whole module and thus needing to use the function method
 # os.listdir
 # from os import listdir one can simply use the function.
+directory_path = '/home/teichopsia/venv_python/prog_foundations/prank'
 
 def rename_files():
     #(1) get file names from a folder
     # will return everything in that directory as a list.
-    file_list = os.listdir('/home/teichopsia/venv_python/prog_foundations/prank')
+    file_list = os.listdir(directory_path)
     print(file_list)
     
     saved_path = os.getcwd()
     print("Current working directory is: " + saved_path)
     
-    os.chdir('/home/teichopsia/venv_python/prog_foundations/prank')
+    os.chdir(directory_path)
     
     #(2) for each file, rename filename
     for file_name in file_list:
