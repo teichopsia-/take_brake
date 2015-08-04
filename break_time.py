@@ -14,8 +14,10 @@ import webbrowser, time
 total_breaks = 3
 break_count = 0
 
+url = 'https://www.youtube.com/watch?v=uQes2Bh9A3w'
+
 while break_count < total_breaks:
     time.sleep(5) #in seconds
-    webbrowser.open('https://www.youtube.com/watch?v=uQes2Bh9A3w')
+    webbrowser.open_new_tab(url)
     break_count += 1
-    #webbrowser.open_new_tab('http://www.google.com')
+    
