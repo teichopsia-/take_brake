@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # Check the time the person started working.
 # Initialize a variable to keep track of the time.
 # Check every two hours[1] to initialize the break.
